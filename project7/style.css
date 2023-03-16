@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: #fafafa;
+  position: relative;
+  transition: all 0.5s;
+  transform-origin: top left;
+  padding: 50px;
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: #ff7979;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.5s;
+}
+
+#close i,
+#open i {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+#close {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+}
+
+#open {
+  position: absolute;
+  left: 60%;
+  top: 70%;
+}
+
+.content {
+  margin: 0px 250px;
+  padding-top: 100px;
+}
+
+.content h1 {
+  font-size: 35px;
+}
+
+.content small {
+  padding-left: 5px;
+  color: rgb(147, 150, 153);
+}
+
+.content p {
+  padding-top: 10px;
+  line-height: 25px;
+}
+
+.content h3 {
+  padding: 30px 0px;
+}
+
+.content img {
+  height: 600px;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  position: absolute;
+  top: 45%;
+}
+
+ul li {
+  padding: 15px;
+  transition: all 5s linear;
+}
+
+ul li i {
+  padding-right: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  transition: all 0.5s linear;
+  transform: rotate(-30deg);
+  color: #fafafa;
+}
+
+ul li a:hover {
+  color: #ff7979;
+}
+
+.hidden {
+  display: none;
+}
